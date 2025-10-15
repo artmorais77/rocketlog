@@ -22,7 +22,6 @@ class SessionsController {
       }
       
       const passwordMatched = await compare(password, user.password);
-      console.log(passwordMatched)
 
       if (!passwordMatched) {
         throw new AppError("Invalid email or password", 401);
