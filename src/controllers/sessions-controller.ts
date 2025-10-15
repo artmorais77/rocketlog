@@ -35,7 +35,9 @@ class SessionsController {
         expiresIn,
       });
 
-      res.status(201).json(token);
+      const { password: _, ...userWithoutPassword } = user;
+
+      res.status(201).json({ token, user: userWithoutPassword });
     } catch (error) {
       next(error);
     }
