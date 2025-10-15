@@ -8,7 +8,8 @@
   "author": "artmorais77",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "express-async-error": "^0.0.2"
   },
   "devDependencies": {
     "@types/express": "^5.0.3",
