@@ -9,10 +9,10 @@ export function errorHandling(
   next: NextFunction
 ) {
   if (error instanceof AppError) {
-    res.status(error.statusCode).json({ message: error.message });
+    return res.status(error.statusCode).json({ message: error.message });
   }
   if (error instanceof ZodError) {
-    res.status(400).json({
+     return res.status(400).json({
       message: "validation error",
       issues: error.format(),
     });
