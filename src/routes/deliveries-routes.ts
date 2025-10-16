@@ -1,7 +1,7 @@
 import { DeliveriesController } from "@/controllers/deliveries-controller";
 import { DeliveriesStatusController } from "@/controllers/deliveries-status-controller";
 import { ensureAuthenticated } from "@/middlewares/ensure-authenticated";
-import { verifyUserAuthorization } from "@/middlewares/verifyuserAuthorization";
+import { verifyUserAuthorization } from "@/middlewares/verifyUserAuthorization";
 import { Router } from "express";
 
 const deliveriesRoutes = Router();
