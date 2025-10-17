@@ -2,6 +2,9 @@
   "name": "rocketlog",
   "version": "1.0.0",
   "main": "src/server.ts",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "dev": "tsx watch --env-file .env src/server.ts",
     "test:dev": "NODE_OPTIONS=--experimental-vm-modules npx jest --watchAll --runInBand",
