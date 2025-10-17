@@ -1,5 +1,3 @@
-describe("UserController", () => {
-  it("test", () => {
-    console.log("passou aqui");
-  });
-});
+import { app } from "@/app";
+import request from "supertest"
+
